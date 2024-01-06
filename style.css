@@ -12,11 +12,11 @@ body {
     text-align: right;
 }
 
-.info img {
+.info__image {
     width: 100%;
 }
 
-.info .info__details-link {
+.info__details-link {
     font-family: fantasy, cursive;
 }
 
