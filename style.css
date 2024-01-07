@@ -52,12 +52,9 @@ h3 {
     list-style: none;
 }
 
-input,
-button {
-    outline: none;
-}
 
-button {
+.task-add__button,
+.task__button {
     background: none;
     border: 0px;
     color: #888;
@@ -65,15 +62,17 @@ button {
     width: 60px;
     font-family: Lato, sans-serif;
     cursor: pointer;
+    outline: none;
 }
 
-button:hover {
+.task-add__button:hover,
+.task__button:hover {
     color: #3a3a3a;
 }
 
 /* Heading */
-h3,
-label[for="new-task"] {
+.task-heading,
+.task-add__label {
     color: #333;
     font-weight: 700;
     font-size: 15px;
@@ -83,7 +82,8 @@ label[for="new-task"] {
     text-transform: uppercase;
 }
 
-input[type="text"] {
+.task-add__input,
+.task__input {
     margin: 0;
     font-size: 18px;
     line-height: 18px;
@@ -94,9 +94,11 @@ input[type="text"] {
     border-radius: 6px;
     font-family: Lato, sans-serif;
     color: #888;
+    outline: none;
 }
 
-input[type="text"]:focus {
+.task-add__input:focus,
+.task__input:focus {
     color: #333;
 }
 
@@ -114,7 +116,7 @@ input[type="text"]:focus {
 }
 
 /* Task list */
-.tasks li {
+.task-item {
     overflow: hidden;
     padding: 20px 0;
     border-bottom: 1px solid #eee;
@@ -124,15 +126,15 @@ input[type="text"]:focus {
     align-items: center;
 }
 
-.tasks li>* {
+.task-item>* {
     vertical-align: middle;
 }
 
-.tasks li .task__checkbox {
+.task-item .task__checkbox {
     margin: 0 10px;
 }
 
-.tasks li .task__label {
+.task-item .task__label {
     padding-left: 10px;
     box-sizing: border-box;
     font-size: 18px;
@@ -140,7 +142,7 @@ input[type="text"]:focus {
     flex-grow: 1;
 }
 
-.tasks li .task__input {
+.task-item .task__input {
     width: 226px
 }
 
@@ -160,16 +162,16 @@ input[type="text"]:focus {
 }
 
 /* Edit Task */
-.tasks li .task__input {
+.task-item .task__input {
     display: none;
     flex-grow: 1;
 }
 
-.tasks li.task--edit-mode .task__input {
+.task-item .task--edit-mode .task__input {
     display: inline-block;
     width: 224px
 }
 
-.tasks li.task--edit-mode .task__label {
+.task-item .task--edit-mode .task__label {
     display: none;
 }
