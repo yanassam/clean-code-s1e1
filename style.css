@@ -166,11 +166,11 @@ h3 {
     flex-grow: 1;
 }
 
-.task-item .task--edit-mode .task__input {
+.task-item .task-item--edit-mode .task__input {
     display: inline-block;
     width: 224px;
 }
 
-.task-item .task--edit-mode .task__label {
+.task-item .task-item--edit-mode .task__label {
     display: none;
 }
