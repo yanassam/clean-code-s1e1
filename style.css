@@ -142,7 +142,7 @@ h3 {
 }
 
 .task-item .task__input {
-    width: 226px
+    width: 226px;
 }
 
 .task__button--delete img {
@@ -157,7 +157,8 @@ h3 {
 
 /* Completed */
 #completed-tasks .task__label {
-    text-decoration: line-through color: #888;
+    text-decoration: line-through;
+    color: #888;
 }
 
 /* Edit Task */
