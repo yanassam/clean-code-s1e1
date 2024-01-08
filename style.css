@@ -110,7 +110,7 @@ h3 {
 .task-add__input {
     /* width: 318px; */
     width: 56%;
-    display: inline-block;
+    display: flex;
     flex-grow: 1;
 }
 
@@ -140,6 +140,7 @@ h3 {
     flex-grow: 1;
 }
 
+
 .task-item .task__input {
     width: 226px;
 }
@@ -161,16 +162,16 @@ h3 {
 }
 
 /* Edit Task */
-.task-item .task__input {
+.task .task__input {
     display: none;
     flex-grow: 1;
 }
 
-.task-item .task-item--edit-mode .task__input {
+.task-item--edit-mode .task__input {
     display: inline-block;
     width: 224px;
 }
 
-.task-item .task-item--edit-mode .task__label {
+.task-item--edit-mode .task__label {
     display: none;
 }
